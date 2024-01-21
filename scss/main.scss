@@ -1,0 +1,19 @@
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
+@import 'custom';
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+//pour être sur de voir tous le contenu de la page (a adapter en fonction de la taille du footer)
+main{
+    margin-bottom: 250px;
+}
+
+footer.footer {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
