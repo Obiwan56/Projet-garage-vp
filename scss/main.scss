@@ -12,7 +12,7 @@ main{
 }
 
 footer.footer {
-    padding: 15px;
+    padding: 13px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -38,7 +38,7 @@ footer.footer {
     }
 
     .titre2-contenu{
-        height: 300px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -48,4 +48,19 @@ footer.footer {
 
 .presentation{
     text-align: justify;
+}
+
+.logo{
+    width: 50%;
+    height: auto;
+    max-width: 100;
+
+}
+
+.pcarrosserie{
+    text-align: justify;
+}
+
+.bouton{
+    margin: auto;
 }
