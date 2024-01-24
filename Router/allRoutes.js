@@ -6,6 +6,8 @@ export const allRoutes = [
     new Route("/presentation", "Présentation", "/pages/presentation.html"),
     new Route("/prestation", "Prestation", "/pages/prestation.html"),
     new Route("/connexion", "Connexion", "/pages/connexion/connexion.html"),
+    new Route("/contact", "Contact", "/pages/contact.html"),
+
 
 
 

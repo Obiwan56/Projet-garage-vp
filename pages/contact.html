@@ -1,0 +1,36 @@
+<div class="titre2 text-center text-primary">
+    <div class="titre2-contenu">
+        <h1>Formulaire de contact</h1>
+    </div>
+</div>
+
+<div class="container p-4">
+    <h2 class="text-primary">Contactez-nous ou laissez-nous un commentaire</h2>
+    
+    <form action="/page-traitement-donnees" method="post">
+        <div class="mb-3">
+            <label for="nom"class="form-label">Votre nom</label>
+            <input type="text" class="form-control" id="nom" name="nom" placeholder="Martin" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Votre e-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="monadresse@mail.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="sujet" class="form-label">Quel est le sujet de votre message ?</label>
+            <select name="sujet" class="form-select form-select-lg mb-3" id="sujet" required>
+                <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                <option value="probleme-compte">Contacter le gararge</option>
+                <option value="question-produit">Laisser un commantaire sur le site</option>
+                <option value="autre">Autre...</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Votre message</label>
+            <textarea id="message" class="form-control" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </div>
+    </form>
+</div>
