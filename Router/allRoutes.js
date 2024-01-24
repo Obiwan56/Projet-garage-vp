@@ -7,6 +7,10 @@ export const allRoutes = [
     new Route("/prestation", "Prestation", "/pages/prestation.html"),
     new Route("/connexion", "Connexion", "/pages/connexion/connexion.html"),
     new Route("/contact", "Contact", "/pages/contact.html"),
+    new Route("/gestion", "Gestion", "/pages/connexion/gestion.html"),
+    new Route("/ajoutAnnonce", "Ajouter une annonce", "/pages/connexion/gestion/ajoutAnnonce.html"),
+
+
 
 
 
