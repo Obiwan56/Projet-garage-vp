@@ -9,6 +9,8 @@ export const allRoutes = [
     new Route("/contact", "Contact", "/pages/contact.html"),
     new Route("/gestion", "Gestion", "/pages/connexion/gestion.html"),
     new Route("/ajoutAnnonce", "Ajouter une annonce", "/pages/connexion/gestion/ajoutAnnonce.html"),
+    new Route("/commentaire", "Commentaire", "/pages/commentaire.html"),
+
 
 
 

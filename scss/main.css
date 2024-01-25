@@ -12038,4 +12038,20 @@ footer.footer {
 
 .icon {
   font-size: 100px;
+}
+
+.rating a {
+  float: right;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 3em;
+  transition: color 0.4s;
+}
+
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+  color: orange;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
