@@ -12054,4 +12054,8 @@ footer.footer {
 .rating a:focus ~ a {
   color: orange;
   cursor: pointer;
+}
+
+.card {
+  width: 18rem;
 }/*# sourceMappingURL=main.css.map */
