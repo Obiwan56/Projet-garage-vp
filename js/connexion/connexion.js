@@ -1,4 +1,3 @@
-
 const email = document.getElementById("email1");
 const mdp1 = document.getElementById("mdp1");
 const myBtn = document.getElementById("boutonValid")
