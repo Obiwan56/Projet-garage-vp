@@ -1,8 +1,27 @@
 const email = document.getElementById("email1");
 const mdp1 = document.getElementById("mdp1");
-const myBtn = document.getElementById("boutonValid")
+const myBtn = document.getElementById("boutonValid");
+
+myBtn.addEventListener("click", clickBouton);
+
+function clickBouton(){
+    //appel de l'api ici
+    if(email.value == 'john@pizza.pan' && mdp1.value == "123"){
+        
+        const token ="je suis un token!!!";
+        setToken(token);
+        //placer token en cookie
+        window.location.replace("/");
+    }
+    else{
+        email.classList.add("is-invalid");
+        mdp1.classList.add("is-invalid");
+    }
+}
 
 
+
+/* code à garder au cas ou
 email.addEventListener("keyup", validateForm);
 mdp1.addEventListener("keyup", validateForm);
 
@@ -52,3 +71,4 @@ function validateMail(input){
         return false;
     }
 }
+*/
