@@ -13,6 +13,12 @@ export const allRoutes = [
     new Route("/occasion", "Nos occasions", "/pages/connexion/gestion/occasion.html"),
     new Route("/mdpOubli1", "Mot de passe oublié", "/pages/connexion/mdpOubli1.html", "/js/connexion/mdpOubli1.js"),
     new Route("/mdpOubli2", "Entrer nouveau mot de passe", "/pages/connexion/mdpOubli2.html", "/js/connexion/mdpOubli2.js"),
+    new Route("/modifSupprAnnonce", "Modifier ou supprimer une annonce", "/pages/connexion/gestion/modifSupprAnnonce.html"),
+    new Route("/ajoutEmploye", "Ajouter un ou une employé(e)", "/pages/connexion/gestion/ajoutEmploye.html"),
+    new Route("/modifSupprEmploye", "Modifier ou supprimer un ou une employé(e)", "/pages/connexion/gestion/modifSupprEmploye.html"),
+
+
+
 
 
 
