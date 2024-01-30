@@ -1,4 +1,12 @@
 const tokenCookieName = "accesstoken";
+const btnDeconnexion = document.getElementById("deconnexionBtn");
+
+btnDeconnexion.addEventListener("click", deconnexion);
+
+function deconnexion(){
+    eraseCookie(tokenCookieName);
+    window.location.reload();
+}
 
 function setToken(token){
     setCookie(tokenCookieName, token, 7);
@@ -48,5 +56,5 @@ if(isConnected()){
     alert('connecté')
 }
 else{
-    alert('non connecté')
+    
 }
