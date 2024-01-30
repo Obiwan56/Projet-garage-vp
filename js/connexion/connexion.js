@@ -11,6 +11,22 @@ function clickBouton(){
         const token ="je suis un token!!!";
         setToken(token);
         //placer token en cookie
+
+        setCookie(roleCoockie, "admin", 7);
+        window.location.replace("/");
+    }
+    else{
+        email.classList.add("is-invalid");
+        mdp1.classList.add("is-invalid");
+    }
+
+    if(email.value == 'jack@pizza.pen' && mdp1.value == "123"){
+        
+        const token ="je suis un token!!!";
+        setToken(token);
+        //placer token en cookie
+
+        setCookie(roleCoockie, "employe", 7);
         window.location.replace("/");
     }
     else{
@@ -18,6 +34,7 @@ function clickBouton(){
         mdp1.classList.add("is-invalid");
     }
 }
+
 
 
 
