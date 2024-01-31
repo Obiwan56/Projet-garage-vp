@@ -16,10 +16,7 @@ export const allRoutes = [
     new Route("/modifSupprAnnonce", "Modifier ou supprimer une annonce", "/pages/connexion/gestion/modifSupprAnnonce.html", ["admin", "employe"]),
     new Route("/ajoutEmploye", "Ajouter un ou une employé(e)", "/pages/connexion/gestion/ajoutEmploye.html", ["admin"]),
     new Route("/modifSupprEmploye", "Modifier ou supprimer un ou une employé(e)", "/pages/connexion/gestion/modifSupprEmploye.html", ["admin"]),
-
-
-
-
+    new Route("/monCompte", "Modifier mon mot de passe", "/pages/connexion/gestion/monCompte.html", ["admin", "employe"], "/js/connexion/monCompte.js"),
 
 
 ];
