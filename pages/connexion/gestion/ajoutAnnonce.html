@@ -1,41 +1,43 @@
-<div class="container">
-  <h2 class="text-primary">Ajouter une annonce</h2>
-    <div class="mb-3">
-        <label for="marque"class="form-label">Marque</label>
-        <input type="text" class="form-control" id="marque" name="marque" required>
-    </div>
-
-    <div class="mb-3">
-        <label for="serie"class="form-label">Série</label>
-        <input type="text" class="form-control" id="serie" name="serie" required>
-    </div>
-
-    <div class="mb-3">
-        <label for="km"class="form-label">Kilometrage</label>
-        <input type="text" class="form-control" id="km" name="km" required>
-    </div>
-
-    <div class="mb-3">
-        <label for="description" class="form-label">Description</label>
-        <textarea id="description" class="form-control" name="description" required></textarea>
-    </div>
-
-    <div class="col-md-4">
-        <label for="carburant" class="form-label">Carburant</label>
-        <select id="carburant" class="form-select" required>
-          <option selected>choisir</option>
-          <option>Diesel</option>
-          <option>Essence</option>
-          <option>Hibrid</option>
-          <option>Electrique</option>
-        </select>
+<form>
+  	<div class="container">
+    <h2 class="text-primary">Ajouter une annonce</h2>
+      <div class="mb-3">
+          <label for="marque"class="form-label">Marque</label>
+          <input type="text" class="form-control" id="marque" name="marque" required>
       </div>
 
-      <div class="mb-3 mt-4">
-        <label for="img" class="form-label">Choisir image</label>
-        <input class="form-control" type="file" id="img">
+      <div class="mb-3">
+          <label for="serie"class="form-label">Série</label>
+          <input type="text" class="form-control" id="serie" name="serie" required>
       </div>
 
-    <button class="btn btn-primary mt-4">Ajouter l'annonce</button>
+      <div class="mb-3">
+          <label for="km"class="form-label">Kilometrage</label>
+          <input type="text" class="form-control" id="km" name="km" required>
+      </div>
 
-</div>
+      <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea id="description" class="form-control" name="description" required></textarea>
+      </div>
+
+      <div class="col-md-4">
+          <label for="carburant" class="form-label">Carburant</label>
+          <select id="carburant" class="form-select" required>
+            <option selected>choisir</option>
+            <option>Diesel</option>
+            <option>Essence</option>
+            <option>Hibrid</option>
+            <option>Electrique</option>
+          </select>
+        </div>
+
+        <div class="mb-3 mt-4">
+          <label for="img" class="form-label">Choisir image</label>
+          <input class="form-control" type="file" id="img">
+        </div>
+
+      <button type="button" class="btn btn-primary mt-4">Ajouter l'annonce</button>
+
+  	</div>
+</form>

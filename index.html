@@ -28,7 +28,7 @@
                     <a class="nav-link" href="/prestation">Prestations</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/occasion">Occasion</a>
+                    <a class="nav-link" href="/occasion">Occasions</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
@@ -37,12 +37,20 @@
                   <li class="nav-item" data-voir="deconnected">
                     <a class="nav-link" href="/connexion">Connexion</a>
                   </li>
-                  <li class="nav-item" data-voir="connected">
-                    <a class="nav-link" href="/gestion">Gestion</a>
+                  
+                  <li class="nav-item dropdown" data-voir="connected">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gestion
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/gestionAnnonce">Gestion annonce</a></li>
+                      <li><a class="dropdown-item" href="/gestionCommentaire">Gestion commentaire</a></li>
+                      <li><a class="dropdown-item" href="/monCompte">Gestion mon compte</a></li>
+                      <li data-voir="admin"><hr class="dropdown-divider"></li>
+                      <li data-voir="admin"><a class="dropdown-item" href="/gestionEmploye">Gestion employé</a></li>
+                    </ul>
                   </li>
-                  <li class="nav-item" data-voir="connected">
-                  <a class="nav-link" href="/monCompte">Mon compte</a>
-                  </li>
+
                   <li class="nav-item" data-voir="connected">
                     <button class="nav-link" id="deconnexionBtn">Deconnexion</button>
                   </li>
