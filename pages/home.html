@@ -6,7 +6,7 @@
 
 <div class="col p-3 container text-center ">
     <h2 class="text-primary text-center">Nos Prestations</h2>
-    <div class="position-relative p-6">
+    <div class="position-relative p-6 col">
         <div>
             <a href="/prestation"><i class="bi bi-car-front icon"></i></a>
             <h3>Réparation de la carrosserie</h3>
@@ -18,15 +18,39 @@
         <div>
             <a href="/occasion"><i class="bi bi-currency-dollar icon"></i></a>
             <h3>Vente de voiture d'occasion</h3>
-        </div>
-    </div>
-
-    <div class="p-6">
-        <a href="/commentaire">Laissez-nous votre témoignage, impression ou commentaire</a>
+        </div>       
 
         <div>
-            <p>Les dix derniers commentaires</p>
+            <table class="table table-striped" id="tablCom">
+                <caption class="caption">Les dix derniers commentaires</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Message</th>
+                        <th scope="col">Note</th>
+                        <th scope="col">date</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Jack</th>
+                        <td>super garage avec une bonne équipe très agréable</td>
+                        <td>5 etoiles</td>
+                        <td>20/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jack</th>
+                        <td>super garage avec une bonne équipe très agréable</td>
+                        <td>5 etoiles</td>
+                        <td>20/01/2021</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <a href="/commentaire">Laissez-nous votre témoignage, impression ou commentaire</a> <br><br>
+        <a href="/allCommentaires">Afficher tous les commentaires</a>
+
     </div>
 
 </div>

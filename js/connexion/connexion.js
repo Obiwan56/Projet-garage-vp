@@ -38,7 +38,7 @@ function clickBouton(){
 
 
 
-/* code à garder au cas ou
+/*code à garder au cas ou
 email.addEventListener("keyup", validateForm);
 mdp1.addEventListener("keyup", validateForm);
 

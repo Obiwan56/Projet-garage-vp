@@ -17,8 +17,8 @@ export const allRoutes = [
     new Route("/gestionEmploye", "Gestion du presonnel", "/pages/connexion/gestion/gestionEmploye.html", ["admin"]),
     new Route("/ajoutEmploye", "aAjouter du presonnel", "/pages/connexion/gestion/ajoutEmploye.html", ["admin"]),
     new Route("/gestionCommentaire", "gérer les commentaire", "/pages/connexion/gestion/gestionCommentaire.html", ["admin", "employe"]),
-
-
+    new Route("/allCommentaires", "Tous les commentaires", "/pages/allCommentaires.html", []),
+    new Route("/detailAnnonce1", "Clio 5 Hdi", "/pages/annonces/detailAnnonce1.html", []),
 
 
 

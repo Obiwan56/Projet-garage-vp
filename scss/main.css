@@ -12037,7 +12037,7 @@ footer.footer {
 }
 
 .icon {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .icon2 {
@@ -12062,4 +12062,8 @@ footer.footer {
 
 .card {
   width: 18rem;
+}
+
+.caption {
+  caption-side: top;
 }/*# sourceMappingURL=main.css.map */
