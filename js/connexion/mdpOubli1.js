@@ -5,30 +5,30 @@ email1.addEventListener("keyup", validateForm);
 
 
 //Function permettant de valider tout le formulaire
-function validateForm(){
+function validateForm() {
     const mailOk = validateMail(email1);
 
 
     //pour que le bouton soit accessible une fois le form valide
-    if(mailOk){
+    if (mailOk) {
         btnValid.disabled = false;
     }
-    else{
+    else {
         btnValid.disabled = true;
     }
 }
 
 
-function validateMail(input){
+function validateMail(input) {
     //Définir mon regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const mailUser = input.value;
-    if(mailUser.match(emailRegex)){
+    if (mailUser.match(emailRegex)) {
         input.classList.add("is-valid");
-        input.classList.remove("is-invalid"); 
+        input.classList.remove("is-invalid");
         return true;
     }
-    else{
+    else {
         input.classList.remove("is-valid");
         input.classList.add("is-invalid");
         return false;

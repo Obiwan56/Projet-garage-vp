@@ -6,26 +6,26 @@ prenom.addEventListener("keyup", validateForm);
 message.addEventListener("keyup", validateForm);
 
 //Function permettant de valider tout le formulaire
-function validateForm(){
+function validateForm() {
     const prenomOk = validateRequired(prenom);
     const messageOk = validateRequired(message);
 
     //pour que le bouton soit accessible une fois le form valide
-    if(prenomOk && messageOk){
+    if (prenomOk && messageOk) {
         btn.disabled = false;
     }
-    else{
+    else {
         btn.disabled = true;
     }
 }
 
-function validateRequired(input){
-    if(input.value != ''){
+function validateRequired(input) {
+    if (input.value != '') {
         input.classList.add("is-valid");
         input.classList.remove("is-invalid");
         return true;
     }
-    else{
+    else {
         input.classList.remove("is-valid");
         input.classList.add("is-invalid");
         return false;
