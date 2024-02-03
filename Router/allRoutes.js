@@ -19,9 +19,7 @@ export const allRoutes = [
     new Route("/gestionCommentaire", "gérer les commentaire", "/pages/connexion/gestion/gestionCommentaire.html", ["admin", "employe"]),
     new Route("/allCommentaires", "Tous les commentaires", "/pages/allCommentaires.html", []),
     new Route("/detailAnnonce1", "Clio 5 Hdi", "/pages/annonces/detailAnnonce1.html", []),
-
-
-
+    new Route("/gestionMessage", "gérer les messages", "/pages/connexion/gestion/gestionMessage.html", ["admin", "employe"]),
 
 ];
 
