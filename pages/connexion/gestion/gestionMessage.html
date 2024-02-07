@@ -5,7 +5,7 @@
     <div>
         <div class="container p-4">
             <table class="table table-striped" id="tablCom">
-                <caption class="caption">Tous les commentaires</caption>
+                <caption class="caption">Tous les Messages</caption>
                 <thead>
                     <tr>
                         <th scope="col">Nom</th>
@@ -24,9 +24,8 @@
                         <td>5555010203</td>
                         <td>Bonjour, je vous contact pour un devis pour changement de pneu ref 255/55/98</td>
                         <td>
-                            <i data-bs-toggle="modal" data-bs-target="#deleteCommentaire" class="bi bi-trash"></i>
-                            <i data-bs-toggle="modal" data-bs-target="#modifyCommentaire"
-                                class="bi bi-pencil-square"></i>
+                            <i data-bs-toggle="modal" data-bs-target="#deleteMessage" class="bi bi-trash"></i>
+                            <i data-bs-toggle="modal" data-bs-target="#reponseMessage" class="bi bi-send"></i>
                         </td>
                     </tr>
 
@@ -37,9 +36,9 @@
                         <td>5555010204</td>
                         <td>Bonjour, je vous contact pour un devis de carrosserie car j'ai embouti tte le par choc
                             arrière de ma 2cv</td>
-                        <td><i data-bs-toggle="modal" data-bs-target="#deleteCommentaire" class="bi bi-trash"></i>
-                            <i data-bs-toggle="modal" data-bs-target="#modifyCommentaire"
-                                class="bi bi-pencil-square"></i>
+                        <td><i data-bs-toggle="modal" data-bs-target="#deleteMessage" class="bi bi-trash"></i>
+                            <i data-bs-toggle="modal" data-bs-target="#reponseMessage"
+                                class="bi bi-send"></i>
                         </td>
                     </tr>
 
@@ -50,35 +49,35 @@
     </div>
 </div>
 
-<div class="modal fade" id="modifyCommentaire" tabindex="-1" aria-labelledby="modifyCommentaireLabel"
+<div class="modal fade" id="reponseMessage" tabindex="-1" aria-labelledby="reponseMessageLabel"
     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modifyCommentaireLabel">Publier</h1>
+                <h1 class="modal-title fs-5" id="reponseMessageLabel">Répondre</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Etes vous sur de vouloir publier ce commentaire ?
+                Etes vous sur de vouloir répondre à ce message ?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                <button type="button" class="btn btn-primary">Modifier</button>
+                <button type="button" class="btn btn-primary">Répondre</button>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="deleteCommentaire" tabindex="-1" aria-labelledby="deleteCommentaireLabel"
+<div class="modal fade" id="deleteMessage" tabindex="-1" aria-labelledby="deleteMessageLabel"
     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="deleteCommentaireLabel">Supprimer</h1>
+                <h1 class="modal-title fs-5" id="deleteMessageLabel">Supprimer</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Etes vous sur de vouloir supprimer ce commentaire
+                Etes vous sur de vouloir supprimer ce message ?
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                     <button type="button" class="btn btn-primary">Supprimer</button>

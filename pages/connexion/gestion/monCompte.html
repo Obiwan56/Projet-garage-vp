@@ -2,10 +2,16 @@
 
 <form class="container p-4">
     <div class="mb-3">
-        <label for="PasswordInput" class="form-label">Nouveau mot de passe</label>
+        <label for="ancienPasswordInput" class="form-label">Entrez votre mot de passe</label>
+        <input type="password" class="form-control" id="ancienPasswordInput">
+       
+    </div>
+
+    <div class="mb-3">
+        <label for="PasswordInput" class="form-label">Entrez votre nouveau mot de passe</label>
         <input type="password" class="form-control" id="PasswordInput">
         <div class="invalid-feedback">
-            Le mot de passe n'est pas assez fort : Au moins 8 caractères comprenant une majuscule et un chiffre.
+            Le mot de passe ne doit pas être identique à l'ancien mot de passe
         </div>
         <div class="valid-feedback">
             Le mot de passe est assez fort.
@@ -13,7 +19,7 @@
     </div>
 
     <div class="mb-3">
-        <label for="ValidatePasswordInput" class="form-label">Confirmer mot de passe</label>
+        <label for="ValidatePasswordInput" class="form-label">Confirmer votre mot de passe</label>
         <input type="password" class="form-control" id="ValidatePasswordInput">
         <div class="invalid-feedback">
             Le mot de passe doit être identique.
