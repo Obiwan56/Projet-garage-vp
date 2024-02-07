@@ -13,7 +13,7 @@ export const allRoutes = [
     new Route("/mdpOubli2", "Entrer nouveau mot de passe", "/pages/connexion/mdpOubli2.html", ["admin", "employe"], "/js/connexion/mdpOubli2.js"),
     new Route("/monCompte", "Modifier mon mot de passe", "/pages/connexion/gestion/monCompte.html", ["admin", "employe"], "/js/connexion/monCompte.js"),
     new Route("/gestionAnnonce", "Gestion des Annonces", "/pages/connexion/gestion/gestionAnnonce.html", ["admin", "employe"]),
-    new Route("/ajoutAnnonce", "Ajouter une Annonces", "/pages/connexion/gestion/ajoutAnnonce.html", ["admin", "employe"]),
+    new Route("/ajoutAnnonce", "Ajouter une Annonces", "/pages/connexion/gestion/ajoutAnnonce.html", ["admin", "employe"], "/js/connexion/ajoutAnnonce.js"),
     new Route("/gestionEmploye", "Gestion du presonnel", "/pages/connexion/gestion/gestionEmploye.html", ["admin"]),
     new Route("/ajoutEmploye", "aAjouter du presonnel", "/pages/connexion/gestion/ajoutEmploye.html", ["admin"]),
     new Route("/gestionCommentaire", "gérer les commentaire", "/pages/connexion/gestion/gestionCommentaire.html", ["admin", "employe"]),

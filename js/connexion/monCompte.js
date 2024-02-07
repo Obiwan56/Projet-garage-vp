@@ -1,18 +1,28 @@
+const mdp = document.getElementById("ancienPasswordInput")
 const mdp1 = document.getElementById("PasswordInput");
 const mdpConfirm = document.getElementById("ValidatePasswordInput");
 const btn = document.getElementById("btnOubli2")
 
+mdp.addEventListener("keyup", validateForm);
 mdp1.addEventListener("keyup", validateForm);
 mdpConfirm.addEventListener("keyup", validateForm);
 
 
-//Function permettant de valider tout le formulaire
+// Function pour vérifier si le nouveau mot de passe est différent de l'ancien
+function isNewPasswordDifferent() {
+    return mdp1.value !== mdp.value;
+}
+
+// Mettre à jour validateForm() pour inclure la vérification isNewPasswordDifferent()
 function validateForm() {
+    const ancienPsw = validatePassword(mdp);
     const pswOk = validatePassword(mdp1);
     const pswConfirmOk = validatePassword(mdpConfirm);
 
-    //pour que le bouton soit accessible une fois le form valide
-    if (pswOk && pswConfirmOk) {
+    // Vérification supplémentaire : le nouveau mot de passe doit être différent de l'ancien
+    const newPasswordDifferent = isNewPasswordDifferent();
+
+    if (ancienPsw && pswOk && pswConfirmOk && newPasswordDifferent) {
         btn.disabled = false;
     }
     else {
@@ -36,3 +46,7 @@ function validatePassword(input) {
         return false;
     }
 }
+
+/*
+
+*/
