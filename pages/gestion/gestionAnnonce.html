@@ -1,5 +1,4 @@
 <h1 class="text-primary text-center">Gestion des voitures en ventes</h1>
-<h4 class="p-2">Bonjour (ou bonsoir en fonction de l'heure) Mr PARROT (ou prénom de l'employé)</h4>
 
 <div class="p-4">
 
@@ -34,7 +33,7 @@
                     <td>120000</td>
                     <td>17000</td>
                     <td><i data-bs-toggle="modal" data-bs-target="#deleteEmploye" class="bi bi-trash"></i>
-                        <i data-bs-toggle="modal" data-bs-target="#modifyEmploye" class="bi bi-pencil-square"></i>
+                        <a href="/modifAnnonce"><i class="bi bi-pencil-square"></i></a>
                     </td>
                 </tr>
                 <tr>
@@ -45,29 +44,11 @@
                     <td>120000</td>
                     <td>17000</td>
                     <td><i data-bs-toggle="modal" data-bs-target="#deleteEmploye" class="bi bi-trash"></i>
-                        <i data-bs-toggle="modal" data-bs-target="#modifyEmploye" class="bi bi-pencil-square"></i>
+                        <a href="/modifAnnonce"><i class="bi bi-pencil-square"></i></a>
                     </td>
                 </tr>
             </tbody>
         </table>
-    </div>
-</div>
-
-<div class="modal fade" id="modifyEmploye" tabindex="-1" aria-labelledby="modifyEmployeLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modifyEmployeLabel">Modifier</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Etes vous sur de vouloir modifier cette annonce ?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                <button type="button" class="btn btn-primary">Modifier</button>
-            </div>
-        </div>
     </div>
 </div>
 

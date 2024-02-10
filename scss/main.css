@@ -12066,4 +12066,8 @@ footer.footer {
 
 .caption {
   caption-side: top;
+}
+
+.rating a.selected {
+  color: red; /* Couleur des étoiles sélectionnées */
 }/*# sourceMappingURL=main.css.map */

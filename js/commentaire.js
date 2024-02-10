@@ -1,6 +1,6 @@
 const prenom = document.getElementById("prenom");
 const message = document.getElementById("message");
-const btn = document.getElementById("btnContact");
+const btn = document.getElementById("btnComm");
 
 prenom.addEventListener("keyup", validateForm);
 message.addEventListener("keyup", validateForm);
@@ -31,3 +31,32 @@ function validateRequired(input) {
         return false;
     }
 }
+
+
+
+
+// Sélectionnez toutes les étoiles
+const stars = document.querySelectorAll('.rating a');
+
+// Ajoutez un écouteur d'événements à chaque étoile
+stars.forEach(star => {
+star.addEventListener('click', (e) => {
+    e.preventDefault(); // Empêche le comportement par défaut du lien
+
+    // Obtenez le nombre d'étoiles sélectionnées
+    const rating = parseInt(star.getAttribute('href').substring(1));
+
+    // Mettez à jour le style des étoiles en fonction de la note sélectionnée
+    stars.forEach((s, index) => {
+        if (index < rating) {
+             s.classList.add('selected');
+        } else {
+             s.classList.remove('selected');
+             }
+         });
+    });
+});
+
+
+
+  
