@@ -20,10 +20,19 @@
 
         <div class="mb-3">
             <label for="pswEmpolye" class="form-label">Mot de passe</label>
-            <input type="password" class="form-control" id="pswEmpolye">
+            <input type="password" class="form-control" id="pswEmpolye" required>
             <div class="invalid-feedback">
-                Le mot de passe n'est pas assez fort : Au moins 8 caractères coprenaant une majuscule et un chiffre.
-            </div>
+                Le mot de passe n'est pas assez fort : Au moins 8 caractères comprenant une majuscule et un chiffre.
+        </div>
+
+        <div class="mt-3">
+            <label for="role" class="form-label">Choix des droits</label>
+            <select id="role" class="form-select" aria-label="Default select example" required>
+                <option value="1">Employe</option>
+                <option value="2">Admin</option>
+                
+            </select>
+        </div>
 
         <button id="ajoutEmployeBtn" type="submit" class="btn btn-primary mt-4">Ajouter</button>
 

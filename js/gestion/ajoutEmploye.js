@@ -2,12 +2,14 @@ const nom = document.getElementById("nom");
 const prenom = document.getElementById("prenom");
 const email = document.getElementById("email");
 const pswEmpolye = document.getElementById("pswEmpolye");
+const role = document.getElementById("role");
 const ajoutEmployeBtn = document.getElementById("ajoutEmployeBtn");
 
 
 email.addEventListener("keyup", validateForm);
 pswEmpolye.addEventListener("keyup", validateForm)
 ajoutEmployeBtn.addEventListener("click",);
+role.addEventListener("select", validateForm)
 
 //Function permettant de valider tout le formulaire
 function validateForm() {
