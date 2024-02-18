@@ -50,13 +50,13 @@ function eraseCookie(name) {
 
 
 function isConnected() {
-    if (getToken() == null || getToken == undefined) {
+    if (getToken() == null || getToken() == undefined) {
         return false;
-    }
-    else {
+    } else {
         return true;
     }
 }
+
 
 
 /*tous les rôles
@@ -96,3 +96,10 @@ function elementEnFonctionDesRoles() {
         }
     })
 }
+
+
+
+btnDeconnexion.addEventListener("click", function() {
+    // Appel de la fonction de déconnexion lorsque le bouton est cliqué
+    deconnexion();
+});
