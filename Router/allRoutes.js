@@ -8,7 +8,7 @@ export const allRoutes = [
     new Route("/connexion", "Connexion", "/pages/connexion/connexion.html", [], "/js/connexion/connexion.js"),
     new Route("/contact", "Contact", "/pages/contact.html", [], "/js/contact/contact.js"),
     new Route("/commentaire", "Commentaire", "/pages/commentaire.html", [], "/js/commentaire.js"),
-    new Route("/occasion", "Nos occasions", "/pages/connexion/gestion/occasion.html" , [], "/js/gestion/occasion.js"),
+    new Route("/occasion", "Nos occasions", "/pages/gestion/occasion.html" , [], "/js/gestion/occasion.js"),
     new Route("/mdpOubli1", "Mot de passe oublié", "/pages/connexion/mdpOubli1.html", ["admin", "employe"], "/js/connexion/mdpOubli1.js"),
     new Route("/mdpOubli2", "Entrer nouveau mot de passe", "/pages/connexion/mdpOubli2.html", ["admin", "employe"], "/js/connexion/mdpOubli2.js"),
     new Route("/monCompte", "Modifier mon mot de passe", "/pages/gestion/monCompte.html", ["admin", "employe"], "/js/connexion/monCompte.js"),
@@ -21,6 +21,10 @@ export const allRoutes = [
     new Route("/gestionCommentaire", "gérer les commentaire", "/pages/gestion/gestionCommentaire.html", ["admin", "employe"]),
     new Route("/allCommentaires", "Tous les commentaires", "/pages/allCommentaires.html", []),
     new Route("/detailAnnonce1", "Clio 5 Hdi", "/pages/annonces/detailAnnonce1.html", []),
+    new Route("/detailAnnonce2", "Peugeot 5008", "/pages/annonces/detailAnnonce2.html", []),
+    new Route("/detailAnnonce3", "Porsche Cayenne Turbo", "/pages/annonces/detailAnnonce3.html", []),
+    new Route("/detailAnnonce4", "GLE HDI", "/pages/annonces/detailAnnonce4.html", []),
+    new Route("/detailAnnonce5", "DS7 Hybrid", "/pages/annonces/detailAnnonce5.html", []),
     new Route("/gestionMessage", "gérer les messages", "/pages/gestion/gestionMessage.html", ["admin", "employe"]),
 
 ];
