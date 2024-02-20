@@ -6,7 +6,7 @@ myBtn.addEventListener("click", clickBouton);
 
 function clickBouton() {
     //appel de l'api ici
-    if (email.value == 'john@pizza.pan' && mdp1.value == "123") {
+    if (email.value == 'admin@test.com' && mdp1.value == "123") {
 
         const token = "je suis un token!!!";
         setToken(token);
@@ -20,7 +20,7 @@ function clickBouton() {
         mdp1.classList.add("is-invalid");
     }
 
-    if (email.value == 'jack@pizza.pen' && mdp1.value == "123") {
+    if (email.value == 'employe@test.fr' && mdp1.value == "123") {
 
         const token = "je suis un token!!!";
         setToken(token);
@@ -38,7 +38,7 @@ function clickBouton() {
 
 
 
-/*code à garder au cas ou
+/*code à garder
 email.addEventListener("keyup", validateForm);
 mdp1.addEventListener("keyup", validateForm);
 
