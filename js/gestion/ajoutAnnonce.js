@@ -1,73 +1,73 @@
-const marque = document.getElementById("marque");
-const serie = document.getElementById("serie");
-const km = document.getElementById("km");
-const year = document.getElementById("year");
-const description = document.getElementById("description");
-const carburant = document.getElementById("carburant");
-const formFileMultiple = document.getElementById("formFileMultiple");
+// Récupération des éléments du formulaire
+const marqueInput = document.getElementById("marque");
+const serieInput = document.getElementById("serie");
+const kmInput = document.getElementById("km");
+const yearInput = document.getElementById("year");
+const descriptionInput = document.getElementById("description");
+const carburantInput = document.getElementById("carburant");
+const imagesInput = document.getElementById("formFileMultiple");
 const ajoutAnnonceBtn = document.getElementById("ajoutAnnonceBtn");
+
+// Appeler validateForm lorsque des événements pertinents se produisent dans le formulaire
+marqueInput.addEventListener("keyup", validateForm);
+serieInput.addEventListener("keyup", validateForm);
+kmInput.addEventListener("keyup", validateForm);
+yearInput.addEventListener("keyup", validateForm);
+descriptionInput.addEventListener("keyup", validateForm);
+carburantInput.addEventListener("change", validateForm);
+imagesInput.addEventListener("change", validateForm);
+ajoutAnnonceBtn.addEventListener("click", validateForm);
 
 // Fonction de validation du formulaire
 function validateForm() {
-    const marqueOk = (marque);
-    const serieOk = (serie);
-    const kmOk = (km);
-    const yearOk = (year);
-    const descriptionOk = (description);
-    const carburantOk = (carburant);
+    const isValid = validateInput(marqueInput) &&
+                     validateInput(serieInput) &&
+                     validateInput(kmInput) &&
+                     validateInput(yearInput) &&
+                     validateInput(descriptionInput) &&
+                     validateInput(carburantInput) &&
+                     validateInput(imagesInput);
 
-    // Activer ou désactiver le bouton d'ajout d'employé en fonction de la validité du formulaire
-    if (marqueOk && serieOk && kmOk && yearOk && descriptionOk && carburantOk) {
-        ajoutAnnonceBtn.disabled = false;
+    // Activer ou désactiver le bouton d'ajout d'annonce en fonction de la validité du formulaire
+    ajoutAnnonceBtn.disabled = !isValid;
+}
+
+// Fonction de validation des champs du formulaire
+function validateInput(input) {
+    if (input.validity.valid) {
+        input.classList.add("is-valid");
+        input.classList.remove("is-invalid");
+        return true;
     } else {
-        ajoutAnnonceBtn.disabled = true;
+        input.classList.remove("is-valid");
+        input.classList.add("is-invalid");
+        return false;
     }
 }
 
-
 // Envoyer les données du formulaire au serveur via une requête AJAX POST
-$(document).ready(function() {
-    $('#ajoutAnnonceBtn').click(function(e) {
-        e.preventDefault(); // Empêche le formulaire de se soumettre normalement
+ajoutAnnonceBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // Empêche le formulaire de se soumettre normalement
 
-        // Capturer les données du formulaire
-        let marqueValue = marque.value;
-        let serieValue = serie.value;
-        let kmValue = km.value;
-        let yearValue = year.value;
-        let descriptionValue = description.value;
-        let carburantValue = carburant.value;
+    // Créer un objet FormData pour envoyer les données du formulaire
+    const formData = new FormData(document.getElementById("ajoutAnnonce"));
 
-        // Créer un objet contenant les données
-        let data = {
-            marque: marqueValue,
-            serie: serieValue,
-            km: kmValue,
-            year: yearValue,
-            description: descriptionValue,
-            carburant: carburantValue
-        };
-
-        // Envoyer les données au serveur via une requête AJAX POST
-        $.ajax({
-            url: 'http://localhost:8000/api/vehicule',
-            method: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(data),
-            success: function(response) {
-                // Gérer la réponse du serveur si nécessaire
-                document.location.href="/gestionAnnonce";
-                console.log(response);
-            },
-            error: function(xhr, status, error) {
-                // Gérer les erreurs si la requête échoue
-                if (xhr.status === 409) {
-                    alert("Une annonce identique existe déjà");
-                } else {
-                    alert("Erreur lors de la création de l'annonce.");
-                    console.error(error);
-                }
-            }
-        });
+    // Envoyer les données au serveur via une requête AJAX POST
+    $.ajax({
+        url: "http://localhost:8000/api/vehicule",
+        type: "POST",
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function(data) {
+            // Gérer la réponse du serveur si nécessaire
+            console.log(data);
+            document.location.href = "/gestioneAnnonce";
+        },
+        error: function(xhr, status, error) {
+            // Gérer les erreurs si la requête échoue
+            console.error(error);
+            alert("Erreur lors de l'ajout de l'annonce.");
+        }
     });
 });

@@ -18,7 +18,7 @@ export const allRoutes = [
     new Route("/gestionEmploye", "Gestion du presonnel", "/pages/gestion/gestionEmploye.html", ["admin"]),
     new Route("/ajoutEmploye", "Ajouter du presonnel", "/pages/gestion/ajoutEmploye.html", ["admin"], "/js/gestion/ajoutEmploye.js"),
     new Route("/modifEmploye", "Modifier du presonnel", "/pages/gestion/modifEmploye.html", ["admin"], "/js/gestion/modifEmploye.js"),    
-    new Route("/gestionCommentaire", "gérer les commentaire", "/pages/gestion/gestionCommentaire.html", ["admin", "employe"]),
+    new Route("/gestionCommentaire", "gérer les commentaire", "/pages/gestion/gestionCommentaire.html", ["admin", "employe"], "js/gestion/gestionCommentaire.js"),
     new Route("/allCommentaires", "Tous les commentaires", "/pages/allCommentaires.html", []),
     new Route("/detailAnnonce1", "Clio 5 Hdi", "/pages/annonces/detailAnnonce1.html", []),
     new Route("/detailAnnonce2", "Peugeot 5008", "/pages/annonces/detailAnnonce2.html", []),

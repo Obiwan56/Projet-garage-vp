@@ -9,12 +9,12 @@ modifEmployeBtn.addEventListener("click", () => {
     }
 });
 
-email.addEventListener("keyup", validateMail);
+email.addEventListener("keyup", validateEmail);
 
 function validerFormulaire() {
     const isValidNom = validateInput(nom);
     const isValidPrenom = validateInput(prenom);
-    const isValidEmail = validateMail(email);
+    const isValidEmail = validateEmail(email);
     
     return isValidNom && isValidPrenom && isValidEmail;
 }
@@ -31,10 +31,10 @@ function validateInput(input) {
     }
 }
 
-function validateMail(input) {
+function validateEmail(input) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const mailUser = input.value;
-    if (mailUser.match(emailRegex)) {
+    const emailValue = input.value;
+    if (emailValue.match(emailRegex)) {
         input.classList.add("is-valid");
         input.classList.remove("is-invalid");
         return true;
@@ -58,7 +58,7 @@ function envoyerDonneesServeur() {
 
     // Effectuer une requête AJAX PUT pour envoyer les données au serveur
     $.ajax({
-        url: "http://localhost:8000/api/user", 
+        url: "http://localhost:8000/api/vehicule",
         type: 'PUT',
         contentType: 'application/json',
         data: JSON.stringify(data),
@@ -67,7 +67,7 @@ function envoyerDonneesServeur() {
         },
         error: function(xhr, status, error) {
             console.error(error);
-            alert("Erreur lors de la mise à jour des données de l'employé.");
+            alert("Erreur lors de la mise à jour des données de l'utilisateur.");
         }
     });
 }

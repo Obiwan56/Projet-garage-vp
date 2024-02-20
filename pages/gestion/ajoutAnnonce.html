@@ -1,4 +1,4 @@
-<form id="ajoutAnnonce">
+<form id="ajoutAnnonce" enctype="multipart/form-data">
     <div class="container">
         <h2 class="text-primary">Ajouter une annonce</h2>
         <div class="mb-3">
@@ -26,10 +26,10 @@
             <textarea id="description" class="form-control" name="description" required></textarea>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3">
             <label for="carburant" class="form-label">Carburant</label>
             <select id="carburant" class="form-select" name="carburant" required>
-                <option selected>choisir</option>
+                <option selected disabled value="">Choisir</option>
                 <option>Diesel</option>
                 <option>Essence</option>
                 <option>Hibrid</option>
@@ -39,10 +39,10 @@
 
         <div class="mb-3 mt-4">
             <label for="formFileMultiple" class="form-label">Choisir une ou plusieurs images</label>
-            <input class="form-control" type="file" id="formFileMultiple" enctype="multipart/form-data" multiple >
+            <input class="form-control" type="file" id="formFileMultiple" name="images[]" multiple required>
         </div>
 
-        <button id="ajoutAnnonceBtn" type="button" class="btn btn-primary mt-4">Ajouter l'annonce</button>
+        <button id="ajoutAnnonceBtn" type="submit" class="btn btn-primary mt-4">Ajouter l'annonce</button>
 
     </div>
 </form>
