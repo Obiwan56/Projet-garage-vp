@@ -1,77 +1,34 @@
 <h1 class="text-primary text-center">Gestion du personnel</h1>
 
 <div class="container">
+    <div class="col-xl">
+        <div>
+            <a href="/ajoutEmploye">Ajouter un ou une employé(e) <i class="bi bi-plus-lg icon2"></i></a>
+        </div>
 
-
-	<div class="col-xl">
-
-		<div >
-			<a href="/ajoutEmploye">Ajouter un ou une employé(e) <i class="bi bi-plus-lg icon2"></i></a>
-		</div>
-
-
-
-		<table class="table table-striped" id="tablCom">
-			<caption class="caption">Liste des employé(e)s</caption>
-		
-			<tbody>
-				<tr>
-					<th scope="row">dupont@michel.mail</th>
-					<td>DUPONT</td>
-					<td>Michel</td>
-					<td><i data-bs-toggle="modal" data-bs-target="#deleteEmploye" class="bi bi-trash"></i>
-						<a href="/modifEmploye"><i class="bi bi-pencil-square"></i></a>
-					</td>
-
-				</tr>
-				<tr>
-					<th scope="row">canon@rachel.mail</th>
-					<td>CANNON</td>
-					<td>Rachel</td>
-					<td><i data-bs-toggle="modal" data-bs-target="#deleteEmploye" class="bi bi-trash"></i>
-						<a href="/modifEmploye"><i class="bi bi-pencil-square"></i></a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+        <table class="table table-striped" id="tablCom">
+            <caption class="caption">Liste des employé(e)s</caption>
+            <thead>
+                <tr>
+                    <th scope>Email</th>
+                    <th scope>Nom</th>
+                    <th scope>Prénom</th>
+                    <th scope>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données des employés seront ajoutées ici par JavaScript -->
+            </tbody>
+        </table>
+    </div>
 </div>
 
-
-
-
-<div class="modal fade" id="modifyEmploye" tabindex="-1" aria-labelledby="modifyEmployeLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h1 class="modal-title fs-5" id="modifyEmployeLabel">Modifier</h1>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				Etes vous sur de vouloir modifier cet(te) employé(e) ?
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-				<button type="button" class="btn btn-primary">Modifier</button>
-			</div>
-		</div>
-	</div>
+<!-- Modal de suppression -->
+<div class="modal fade" id="deleteEmployeModal" tabindex="-1" aria-labelledby="deleteEmployeLabel" aria-hidden="true">
+    <!-- Contenu de la modal de suppression -->
 </div>
 
-<div class="modal fade" id="deleteEmploye" tabindex="-1" aria-labelledby="deleteEmployeLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h1 class="modal-title fs-5" id="deleteEmployeLabel">Supprimer</h1>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				Etes vous sur de vouloir supprimer cet(te) employé(e) ?
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-				<button type="button" class="btn btn-primary">Supprimer</button>
-			</div>
-		</div>
-	</div>
+<!-- Modal de modification -->
+<div class="modal fade" id="modifyEmployeModal" tabindex="-1" aria-labelledby="modifyEmployeLabel" aria-hidden="true">
+    <!-- Contenu de la modal de modification -->
 </div>

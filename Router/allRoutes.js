@@ -15,7 +15,7 @@ export const allRoutes = [
     new Route("/gestionAnnonce", "Gestion des Annonces", "/pages/gestion/gestionAnnonce.html", ["admin", "employe"]),
     new Route("/ajoutAnnonce", "Ajouter une Annonces", "/pages/gestion/ajoutAnnonce.html", ["admin", "employe"], "/js/gestion/ajoutAnnonce.js"),
     new Route("/modifAnnonce", "Modifier une Annonces", "/pages/gestion/modifAnnonce.html", ["admin", "employe"], "/js/gestion/modifAnnonce.js"),
-    new Route("/gestionEmploye", "Gestion du presonnel", "/pages/gestion/gestionEmploye.html", ["admin"]),
+    new Route("/gestionEmploye", "Gestion du presonnel", "/pages/gestion/gestionEmploye.html", ["admin"], "/js/gestion/gestionEmploye.js" ),
     new Route("/ajoutEmploye", "Ajouter du presonnel", "/pages/gestion/ajoutEmploye.html", ["admin"], "/js/gestion/ajoutEmploye.js"),
     new Route("/modifEmploye", "Modifier du presonnel", "/pages/gestion/modifEmploye.html", ["admin"], "/js/gestion/modifEmploye.js"),    
     new Route("/gestionCommentaire", "gérer les commentaire", "/pages/gestion/gestionCommentaire.html", ["admin", "employe"], "js/gestion/gestionCommentaire.js"),
